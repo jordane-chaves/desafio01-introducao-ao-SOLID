@@ -19,8 +19,7 @@ class ListAllUsersUseCase {
       throw new Error("You need to be an administrator to list all users.");
     }
 
-    const allUsers = this.usersRepository.list();
-    return allUsers;
+    return this.usersRepository.list();
   }
 }
 
